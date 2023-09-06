@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kumbh+Sans:wght@400;800&family=Philosopher&family=Rubik:wght@300&display=swap" rel="stylesheet" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="left-nav">
+          <div class="hamburger">
+            <img src="./images/icon-menu.svg" alt="hamburger" />
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <ul class="nav-links">
+            <img src="./images/icon-close.svg " />
+            <li><a href="#" class="text">Collections</a></li>
+            <li><a href="#" class="text">Men</a></li>
+            <li><a href="#" class="text">Women</a></li>
+            <li><a href="#" class="text">About</a></li>
+            <li><a href="#" class="text">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <div class="cart">
+            <img src="./images/icon-cart.svg" alt="cart" />
+            <div class="amount"></div>
+          </div>
+          <div class="avatar">
+            <img src="./images/image-avatar.png" alt="avatar" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <main>
+      <div class="main-container">
+        <div class="swiper mySwiper">
+          <div class="slider">
+            <img src="./images/image-product-1.jpg" id="MainImg" alt="product" />
+            <div class="small-img-container">
+              <div class="small-img-col">
+                <img src="./images/image-product-1-thumbnail.jpg" class="small-img" alt="product" />
+              </div>
+              <div class="small-img-col">
+                <img src="./images/image-product-2-thumbnail.jpg" class="small-img" alt="product" />
+              </div>
+              <div class="small-img-col">
+                <img src="./images/image-product-3-thumbnail.jpg" class="small-img" alt="product" />
+              </div>
+              <div class="small-img-col">
+                <img src="./images/image-product-4-thumbnail.jpg" class="small-img" alt="product" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="description">
+            <h3 class="company">Sneaker Company</h3>
+            <h1 class="title">Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          </div>
+          <div class="price-tag">
+            <div class="price">
+              <h2>$125.00</h2>
+              <h3>50%</h3>
+            </div>
+            <div class="original-price">
+              <h2><span style="text-decoration: line-through">$250.00</span></h2>
+            </div>
+          </div>
+          <div class="quantity-cart">
+            <div class="quantity">
+              <span class="minus">-</span>
+              <div class="quantity-value">0</div>
+              <span class="plus">+</span>
+            </div>
+            <button id="add-to-cart"><img src="./images/icon-cart.svg" alt="cart" />Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
